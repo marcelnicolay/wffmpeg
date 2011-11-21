@@ -13,7 +13,7 @@
 # limitations under the License.
  
 from setuptools import setup, find_packages
-from simplexml import __version__
+from wffmpeg import __version__
  
 setup(
     name = 'wffmpeg',
