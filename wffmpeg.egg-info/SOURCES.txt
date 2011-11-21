@@ -1,9 +1,0 @@
-setup.py
-wffmpeg/__init__.py
-wffmpeg/ffbase.py
-wffmpeg/ffexception.py
-wffmpeg/file.py
-wffmpeg.egg-info/PKG-INFO
-wffmpeg.egg-info/SOURCES.txt
-wffmpeg.egg-info/dependency_links.txt
-wffmpeg.egg-info/top_level.txt
