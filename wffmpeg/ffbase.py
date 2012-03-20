@@ -15,8 +15,8 @@ class FFmpeg():
     # the main idea
     re_mainline = re.compile("^\s*Input #(\d+?), (.*?), from \'(.*?)\':$")
     re_infoline = re.compile("^\s*Duration: (.*?), start: \d\.\d+, bitrate: (\d+?) kb\/s$")
-    re_videoline = re.compile("^\s*Stream #(\d+\.\d+?)[^\:]*: Video: (.*?), (.*?), (.*?), .*$")
-    re_audioline = re.compile("^\s*Stream #(\d+\.\d+?): Audio: (.*?), (\d+?) Hz, (.*?), (.*?), (\d+?) kb\/s$")
+    re_videoline = re.compile("^\s*Stream #(\d+(?:\:|\.)\d+?)[^\:]*: Video: (.*?), (.*?), (.*?), .*$")
+    re_audioline = re.compile("^\s*Stream #(\d+(?:\:|\.)\d+?): Audio: (.*?), (\d+?) Hz, (.*?), (.*?), (\d+?) kb\/s$")
 
     def __init__(self, cmd="ffmpeg"):
         self.__ffmpeg__ = cmd
